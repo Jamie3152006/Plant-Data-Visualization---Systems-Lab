@@ -1,0 +1,119 @@
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+    background-color: rgb(212, 201, 185);
+    font-family: "Syne Mono", monospace;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(64, 92, 30);
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+header{
+    margin-bottom: 5%;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+#home-btn, #page-btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 16px;
+    background-color: rgb(103, 129, 78);
+    border: none;
+    cursor: pointer;
+    font-family: "Syne Mono", monospace;
+    color: antiquewhite;
+    text-decoration: none;
+    position: relative;
+    z-index: 999;
+}
+
+#question, #name, #analysis{
+    text-align: center;
+    font-family: "Syne Mono", monospace;
+    font-size: 18px;
+    color: rgb(110, 134, 78);
+}
+
+.final-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#analysis {
+  width: 80%;
+}
+
+#name {
+  margin-bottom: 2%;
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 50%;
+  margin-top: -8%;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    color: white;
+    font-family: "Syne Mono", monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+.background-text {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    top: 23%;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    /* word-break: break-all; */
+    font-family: "Syne Mono", monospace;
+    font-size: 45px;
+    color: rgb(157, 146, 70);
+    margin: 2%;
+}
+
+#reveal-space {
+    height: 60vh;
+}
+
+.plant-link {
+  all: unset;
+  font: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="styling/main-styling.css">
+    <link rel="stylesheet" href="styling/chart-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Plant Data Visualization</h1>
+        <h2 id="question">How many plants are in each category of <br> the specific areas of plant care?</h2>
+        <div class="btn-container">
+            <a href="index.html" id="home-btn">HomePage</a>
+        </div>
+    </header>
+    <section class="charts">
+        <div class="chart-container">
+            <div class="chart-items"><canvas id="water-chart"></canvas></div>
+            <div class="chart-items"><canvas id="growth-chart"></canvas></div>
+            <div class="chart-items"><canvas id="sunlight-chart"></canvas></div>
+            <div class="chart-items"><canvas id="soil-chart"></canvas></div>
+        </div>
+        <div id="pop-up-overlay"></div>
+        <div id="pop-up"></div>
+    </section>
+    <hr>
+    <footer class="final-results">
+        <p id="analysis">Based on NYC's climate of cold winters, hot and humid summers, and even rain, the plants that would be best suited for the area based on the dataset would be: <strong>
+            <button class = "plant-link" data-plant = "Coneflower">coneflower</button>, 
+            <button class = "plant-link" data-plant = "Echinacea">echinacea</button>, 
+            <button class = "plant-link" data-plant = "Black-eyed Susan">black-eyed susan</button>, 
+            <button class = "plant-link" data-plant = "Sedum">sedum</button>, and 
+            <button class = "plant-link" data-plant = "Hosta">hosta</button>.
+        </strong><br>They are all tough plants that have good tolerance for heat and dryness, but are lower maintenance and thrive well in humidity.</p>
+    </footer>
+    <script src="chart-logic.js"></script>
+</body>
+</html>

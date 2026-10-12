@@ -1,0 +1,70 @@
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    height: 100vh;
+}
+
+.chart-items {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+}
+
+
+#pop-up-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+#pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(167, 186, 115);
+    padding: 20px;
+    width: min(500px, 90vw);
+    max-height: 70vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    font-family: "Syne Mono", monospace;
+    text-shadow: none;
+}
+
+#close-popup {
+    width: 20%;
+    cursor: pointer;
+    background-color: rgb(211, 236, 121);
+    border: none;
+    font-family: "Syne Mono", monospace;
+}
+
+.nyc-pick {
+    color: #8b0606;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+h2{
+    font-size: 35px;
+    margin-top: 2%;
+}
+
+hr{
+    border: 0;
+    height: 2px;
+    background-color: rgb(91, 120, 73);
+    margin-top: 10%;
+    margin-bottom: 0%;
+}

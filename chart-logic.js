@@ -20,7 +20,7 @@ function categorizeWater(text){
     if(t.includes("moist")) return "Keep Moist";
 }
 
-
+//old function that counted the plant names and made them into numerical data
 // function countBy(arr){
 //     return arr.reduce((acc, item) => {
 //         acc[item] = (acc[item] || 0) + 1;
@@ -89,6 +89,8 @@ function showPopup(category, names) {        //pop-up function
             `<li class="${isNycPick(n) ? 'nyc-pick' : ''}">${n}</li>`
         ).join("")}</ul>
     `);  
+
+    //old function that had the pop-up function
     // document.getElementById("pop-up").innerHTML = `
     //     <h2>${category} (${unique.length} plants)</h2>
     //     <p class="legend"><span class="nyc-pick">Red</span> = Good fit for NYC</p>
@@ -165,24 +167,26 @@ async function main(){ //wait until the data is fetched before running this code
     const sunlight = plantData.map(plantData => plantData.Sunlight);
     const soil = plantData.map(plantData => plantData.Soil);
     
+    //old function that catergorized the water data into smaller groups and had the plant amount
     // const categoryCounts = water_category.reduce((acc, cat) => {
     //     acc[cat] = (acc[cat] || 0) + 1;
     //     return acc;
     // }, {});
-
 
     // const plantCounts = plant_names.reduce((acc, name) => {
     //     acc[name] = (acc[name] || 0) + 1;
     //     return acc;
     // }, {});
 
+
+    //draw charts
     drawCountChart("water-chart", groupBy(plantData, "WateringCategory"), "Plants by Watering Category", "123, 175, 212");
     drawCountChart("growth-chart", groupBy(plantData, "Growth"), "Plants by Growth Rate", "141, 182, 0");
     drawCountChart("sunlight-chart", groupBy(plantData, "Sunlight"), "Plants by Sunlight Requirement", "239,155,15");
     drawCountChart("soil-chart", groupBy(plantData, "Soil"), "Plants by Soil Type", "84,84,7");
-    //draw charts
+    
 
-
+    //old that created the total number data to put into the charts for the plants
     // const total = Object.values(categoryCounts).reduce((sum, n) => sum + n, 0);
     // console.log(total);
 
